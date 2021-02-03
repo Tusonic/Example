@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="f1()">Set background</button>
+
+<script>
+    function f1() {
+        document.body.style.background = "#ffff00";
+        setTimeout(f2, 500);
+    }
+    function f2() {
+        document.body.style.background = "#000000";
+        setTimeout(f1, 500);
+    }
+</script>
+
+</body>
+</html>
